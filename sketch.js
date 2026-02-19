@@ -27,6 +27,7 @@ let camY = 0;
 
 function preload() {
   worldData = loadJSON("world.json"); // load JSON before setup [web:122]
+  bgimg = loadImage("assets/bg.jpg");
 }
 
 function setup() {
@@ -45,6 +46,7 @@ function setup() {
 
 function draw() {
   player.updateInput();
+  image(bgimg, 0, 0);
 
   // Keep player inside world
   player.x = constrain(player.x, 0, level.w);

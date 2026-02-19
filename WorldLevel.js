@@ -15,20 +15,7 @@ class WorldLevel {
 
   drawBackground() {
     background(220);
-  }
-
-  drawWorld() {
-    noStroke();
-    fill(this.bg[0], this.bg[1], this.bg[2]);
-    rect(0, 0, this.w, this.h);
-
-    stroke(245);
-    for (let x = 0; x <= this.w; x += this.gridStep) line(x, 0, x, this.h);
-    for (let y = 0; y <= this.h; y += this.gridStep) line(0, y, this.w, y);
-
-    noStroke();
-    fill(170, 190, 210);
-    for (const o of this.obstacles) rect(o.x, o.y, o.w, o.h, o.r ?? 0);
+    image(bgimg, 0, 0);
   }
 
   drawHUD(player, camX, camY) {
