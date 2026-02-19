@@ -20,7 +20,7 @@ class Player {
   }
 
   draw() {
-    fill(194, 120, 182);
+    fill(207, 140, 209);
     noStroke();
     rect(this.x - 12, this.y - 12, 20, 20, 15);
   }

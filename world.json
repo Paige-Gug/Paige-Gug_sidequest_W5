@@ -7,11 +7,12 @@
     "gridStep": 160
   },
   "camera": {
-    "lerp": 0.1
+    "lerp": 0.12
   },
   "playerStart": {
     "x": 300,
     "y": 300,
-    "speed": 2
-  }
+    "speed": 3
+  },
+  "obstacles": [{ "x": 40, "y": 40, "w": 80, "h": 80, "r": 10 }]
 }
