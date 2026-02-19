@@ -46,7 +46,6 @@ function setup() {
 
 function draw() {
   player.updateInput();
-  image(bgimg, 0, 0);
 
   // Keep player inside world
   player.x = constrain(player.x, 0, level.w);
@@ -70,7 +69,7 @@ function draw() {
   level.drawBackground();
 
   push();
-  translate(-camX, -camY);
+  translate(camX, -camY);
   level.drawWorld();
   player.draw();
   pop();
